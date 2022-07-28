@@ -23,9 +23,9 @@ import json
 with open("config.json","r") as f:
     config = json.loads(f.read())
 
-TOKEN=config.get("5494563306:AAGJB3wNXfRuMcxTD_4wKyc96NsKI50mYqk")
-WORKERS=config.get("workers", 6)
-ADMIN_LIST = config.get("admin_list", [5384908133])
+TOKEN=config.get("token")
+WORKERS=config.get("workers", 32)
+ADMIN_LIST = config.get("admin_list", None)
 OPEN_LOBBY = config.get("open_lobby", True)
 ENABLE_TRANSLATIONS = config.get("enable_translations", False)
 DEFAULT_GAMEMODE = config.get("default_gamemode", "fast")
